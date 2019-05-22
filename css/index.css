@@ -1,0 +1,1070 @@
+/*去属性本身的边框和样式*/
+body, h1,h2,h3,h4,h5,h6,input,ul,ol,li,textarea,p,form,select{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/*文字回退 去a标签默认属性*/
+a{
+    color: #ffffff;  /*文字颜色*/
+    text-decoration: none;   /*下划线*/
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+/*设置文本字体大小和样式*/
+body{
+    background-color: #f5faff;
+    font-family: 宋体,sans-serif;    /*sans-serif同类型文字样式*/
+    font-size: 16px;
+}
+.header{
+    width: 100%;
+    height: 50px;
+    background: black;
+}
+.header_box{
+    width: 1400px;
+    height: 100%;
+    margin: auto;
+    line-height:50px ;
+}
+/*h1,nav,search 浮动*/
+h1{
+    height: 100%;    /*不设置宽属性，大小就与内容有关*/
+    float:left;
+    margin-right: 100px;
+    font-size: 28px;
+}
+.nav{
+    height: 100% ;  /*不设置宽属性，大小就与内容有关*/
+    float:left;
+}
+.nav li{
+    margin-right: 36px;
+    float: left;
+    font-size: 18px;
+}
+.nav li a:hover{     /*鼠标放在文字上，文字颜色改变*/
+    color:#00c1de;
+}
+.search{
+    width: 50px;
+    height: 100%;
+    background: antiquewhite;
+    float:right;
+}
+/*header*/
+.banner{
+    width: 1400px;
+    height: 280px;
+    margin: 10px auto;
+    background: #f5faff;
+}
+.banner_left{
+    width:550px;
+    height: 100%;
+    float: left;
+    margin-right:10px;
+    background: azure;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+.banner_left img{
+    width: 100%;
+    height: 100%;
+}
+
+.banner_left li{
+    width: 100%;
+    height: 100%;
+}
+.banner_left li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.banner_left img{
+    position: absolute;
+    left:0px ;
+    top:0px ;
+}
+
+.leftBtn , .rightBtn{
+    width: 40px;
+    height: 32px;
+    background: #009966;
+    position: absolute;/*定位：用于堆叠*/
+    /*第一种居中的方法*/
+    top: 50%;
+    margin-top: -16px;
+}
+.leftBtn{
+    left: 20px;
+}
+.rightBtn{
+    right: 20px;
+}
+.btnlist{
+    width: 96px;
+    height: 10px;
+    position:absolute;
+    bottom: 36px;
+    left: 0px; /*第二种居中方式*/
+    right: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.btnlist li{
+    width: 10px;
+    margin-right: 14px;
+    background: #f6f6f6;
+    float: left;
+    border-radius: 50%;
+}
+.banner_mid{
+    width: 450px;
+    height: 100%;
+    float: left;
+    background:#f5faff;
+}
+.banner_mid li{
+    width: 450px;
+    height: 135px;
+    margin-bottom: 10px;
+    background: azure;
+}
+.banner_mid li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 138px;
+    overflow: hidden;
+    border-radius: 3px;
+}
+.banner_mid li a:hover img{
+    transform: scale(1.2,1.2);
+}
+.banner_mid li a img{
+    transition:transform .2s ease-in ;
+}
+.banner_mid li p{
+    width: 80%;
+    height: 48px;
+    font-size: 18px;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-align: center;/*文本居中*/
+    color: white;
+    position: absolute;
+    top:50%;
+    margin-top: -24px;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+.banner_right{
+    width:380px;
+    height: 100%;
+    float: left;
+    margin-left:10px;
+    background: azure;
+}
+.banner .banner_right .card{
+    width: 340px;
+    height:180px;
+    background: #333333;
+    padding: 20px;
+}
+.banner .banner_right .card h2{
+    margin-bottom: 15px;
+    color: white;
+}
+.banner .banner_right .card p{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white;
+}
+.banner_right .tubiao{
+    width: 380px;
+    height: 70px;
+    background: #333333;
+}
+.tubiao li{
+    width: 40px;
+    height: 40px;
+    float: left;
+    background: #333333;
+    position: relative;
+    border-radius: 50%;
+    margin-left: 40px;
+}
+.tubiao li:hover{
+    box-shadow: 1px 1px 10px 3px rgb(0,0,0.3);
+}
+.tubiao .first img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+}
+.tubiao .second img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+}
+.tubiao .third img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+}
+.tubiao .forth img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+}
+/*banner*/
+/*.diary{*/
+/*    width: 1400px;*/
+/*    height: 310px;*/
+/*    margin: 0 auto 20px;*/
+/*    background: #f5faff;*/
+/*}*/
+.diary_left{
+    width: 970px;
+    /*height: 270px;*/
+    float: left;
+    padding: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    background: #ffffff;
+    border-radius:5px;
+}
+.diary_list{
+    width: 100%;
+    height:21px;
+    /*padding: 10px 0;*/
+    overflow: hidden;
+    border-bottom: 1px solid #e4e3e3;
+    font-size: 16px;
+}
+.diary_list li{
+    margin-right: 30px;
+    float: left;
+}
+.diary_list li a{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+.diaryTab{
+    width:100% ;
+    height: 220px;
+    margin-top: 10px;
+    margin-bottom: 18px;
+    background: white;
+}
+.tabImage{
+    width: 300px;
+    height: 220px;
+    float: left;
+    margin-bottom: 10px;
+    background: white;
+}
+.tabImage li{
+    width: 300px;
+    height: 105px;
+    margin-bottom: 10px;
+    background: azure;
+}
+.tabImage li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 105px;
+    overflow: hidden;
+    border-radius: 3px;
+}
+.tabImage li p{
+    width: 80%;
+    height: 48px;
+    font-size: 18px;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-align: center;/*文本居中*/
+    color: white;
+    position: absolute;
+    top:50%;
+    margin-top: -24px;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 999;
+}
+.tabImage li a:hover img{
+    transform: scale(1.2,1.2);
+}
+.tabImage li a img{
+    transition: transform .2s ease-in;;
+}
+.tabList{
+    width: 550px;
+    height: 220px;
+    float: left;
+    background:white;
+}
+.tabList >li {
+    height: auto;
+    background: #fdfff8;
+    padding: 0px 30px 0px 30px;
+}
+.tabList >li.hot{
+    background: #dedede;
+}
+.tabList >li >h1{
+    font-size: 20px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.tabList >li >h1 a{
+    font-size: 16px;
+    color: #333333;
+    /*A标签题目原来的颜色*/
+}
+
+.tabList >li.hot >h1 a{
+    color: #100b10;
+    /*鼠标点上去后a标签题目变的颜色*/
+}
+.tabList >li p{
+    font-size: 16px;
+    line-height: 1.5;
+    height: 48px;
+    padding: 5px 0px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp:2;
+    display: none;
+}
+
+.tabList >li.hot >p{
+    display: -webkit-box;
+}
+/*p文本鼠标放上去就显示了*/
+.tabList >li >h1 span{
+    width: 24px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    color: #fdfff8;
+    background: #9fa496;
+    font-weight: normal;
+}
+
+/*span原来的样子*/
+.tabList >li.hot >h1 span{
+    background: #100b10;
+}
+
+.diary_right{
+    width: 340px;
+    height: 270px;
+    float: left;
+    padding: 20px;
+    background:#ffffff;
+    border-radius:5px;
+    margin-top: 10px;
+}
+.diary_right_list{
+    height:21px ;
+    overflow: hidden; /*清除浮动*/
+    border-bottom: 1px solid #e4e3e3;
+    font-size: 18px;
+    position: relative;
+    font-weight: bold;
+}
+.diary_right_list::before{
+    content: '';
+    width: 72px;
+    height: 2px;
+    background: #333333;
+    position: absolute;
+    bottom: -1px;
+}
+.update{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.update li{
+    height:50px ;
+    margin-bottom: 10px;
+    background: #f6f6f6;
+    border-radius: 5px;
+    padding: 0 20px 0 34px;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 50px;
+    font-size: 18px;
+}
+.update li::before{
+    content: '';
+    width: 4px;
+    height: 4px;
+    display: inline-block;
+    background: #333333;
+    border-radius: 50%;
+    position: absolute;
+    left:15px ;
+    top: 22px;
+}
+/*diary*/
+.main{
+    width: 1400px;
+    /*main-height: 500px;*/
+    margin: 0 auto 20px;
+    background: #f5faff;
+}
+.mainleft{
+    width: 1010px;
+    min-height:600px ;
+    float: left;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.mainbodyleft1{
+    width: 1010px;
+    min-height:600px ;
+    float: left;
+    background: white;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.recommend{
+    width: 970px;
+    height: 658px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.title{
+    height:21px ;
+    border-bottom: 1px solid #e4e3e3;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+}
+.title::before{
+    content: '';
+    height: 2px;
+    width: 72px;
+    background: #333333;
+    position: absolute;
+    bottom: -1px;
+}
+.title .recommendCategory{
+    float:right;
+}
+.recommendCategory > li{
+    float: left;
+    margin-right: 15px;
+    color: #e4e3e3;
+}
+.recommendCategory > li >a{
+    color:#333333;
+    font-size: 18px;
+}
+.recommendlist{
+    padding:20px 11px;
+    height: 636px;
+    position: relative;
+}
+.recommendlist::before{
+    content: '';
+    width: 1px;
+    height: 576px;
+    background: white;
+    position: absolute;
+    top: 20px;
+    right: 11px;
+}
+.recommendlist li{
+    float: left;
+    width: 315px;
+    height: 287px;
+    border-right:1px solid #e4e3e3 ;
+    border-bottom:1px solid #e4e3e3 ;
+    transition:all ease-in .15s;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+.recommendlist li:hover{
+    box-shadow:1px 1px 10px 3px rgb(0,0,0);
+    z-index: 999;
+}
+.recommendThumb{
+    display: block;
+    height: 100px;
+    border-radius: 3px;
+}
+.recommendlist > li > h2{
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 10px;
+}
+.recommendlist > li > p{
+    font-size: 14px;
+    color: #999999;
+    line-height: 1.5;
+    height: 105px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:5;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.recommendlist .recommendRead{
+    font-size: 16px;
+    color: #009966;
+    position: absolute;
+    bottom:3px;
+    left: 22px;
+}
+.recommendlist .recommendRead::before{
+    content: '+';
+}
+.recommendlist li:nth-child(3n){
+    border-right: none;
+}
+.recommendlist li:nth-last-child(1){
+    border-bottom:none ;
+}
+.recommendlist li:nth-last-child(2){
+    border-bottom:none ;
+}
+.recommendlist li:nth-last-child(3){
+    border-bottom:none ;
+}
+.mainbodyleft{
+    width: 1010px;
+    min-height:600px ;
+    float: left;
+    background: white;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.recommend1{
+    width: 970px;
+    padding:20px;
+}
+.recommend1body{
+    /*height: 510px;*/
+}
+.recommend1body .content{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.recommend1body .word{
+    height:40px ;
+}
+.recommend1body .word b{
+    width: 54px;
+    height: 40px;
+    margin-right: 10px;
+    color: red;
+    font-size: 20px;
+}
+.recommend1body .word a{
+    width: 906px;
+    height: 40px;
+    color: #333333;
+    font-size: 20px;
+    font-weight: bold;
+}
+.recommend1body .body{
+    /*border-top: 10px;*/
+    height: 150px;
+}
+.recommend1body .image {
+    height: 150px;
+    width: 300px;
+    margin-right: 10px;
+    float: left;
+    border-radius: 3px;
+}
+.recommend1body .para{
+    float: right;
+    width: 670px;
+    /*height: 100px;*/
+}
+.para .introduce{
+    height: 50px;
+    line-height: 50px;
+}
+.recommend1body .para p{
+    width: 670px;
+}
+.para > img{
+    width: 34px;
+    height: 34px;
+}
+.readmore{
+    width: 80px;
+    height: 28px;
+    border-radius: 6px;
+    background: #36a8fe;
+    color: white;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    line-height: 28px;
+    text-align: center;
+}
+.para .xinde{
+    color: #009966 ;
+}
+.recommend1body .word{
+    height:40px ;
+    margin-top: 20px;
+}
+.recommend1body .word b{
+    width: 54px;
+    height: 40px;
+    margin-right: 10px;
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+.recommend1body .word a{
+    width: 906px;
+    height: 40px;
+    color: #333333;
+}
+.recommend1body .body{
+    border-top: 10px;
+    height: 150px;
+    position: relative;
+}
+.recommend1body .image {
+    height: 150px;
+    width: 300px;
+    margin-right: 10px;
+    float: left;
+}
+.recommend1body .para{
+    float: left;
+    font-size: 18px;
+    width: 500px;
+    height: 100px;
+}
+.mainbodyright{
+    width: 380px;
+    float: right;
+    background: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.mainbodyright .recommend{
+    width: 340px;
+    height: 520px;
+    padding: 20px;
+}
+.mainbodyright .recommend .title{
+    height:21px ;
+    width: 340px;
+    border-bottom: 1px solid #e4e3e3;
+    font-size: 18px;
+}
+.mainbodyright .recommend .list{
+    width:340px;
+    height:180px;
+    position: relative;
+}
+.mainbodyright .recommend h2{
+    width: 340px;
+    color: #ffffff;
+    position: absolute;
+    left: 20px;
+    top:70px;
+    white-space: normal;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.5;
+    height: 54px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:2;
+    overflow: hidden;
+    /*overflow: hidden;*/
+}
+.mainbodyright .recommend .image1{
+    height: 150px;
+    width: 340px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mainbodyright .para{
+    height: 280px;
+    margin-top: 10px;
+}
+.mainbodyright .recommend li{
+    height:60px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.mainbodyright .recommend li img{
+    height: 60px;
+    width: 100px;
+    margin-right: 10px;
+    float: left;
+    position: absolute;
+}
+.mainbodyright .recommend li a{
+    width:230px ;
+    height:60px;
+    color: #333333;
+    font-size: 18px;
+    float: right;
+    
+}
+.mainright{
+    width: 380px;
+    /*min-height: 600px;*/
+    float: left;
+    border-radius: 5px;
+    /*position: relative;*/
+}
+.mainbodyright1{
+    width: 380px;
+    /*min-height: 600px;*/
+    float: left;
+    background: white;
+    border-radius: 5px;
+    /*position: relative;*/
+    margin-top: 10px;
+}
+.mainright .mainbodyright1 .recommend{
+    width: 340px;
+    height: 520px;
+    padding: 20px;
+}
+.mainright .mainbodyright1 .recommend .title{
+    height:21px ;
+    width: 340px;
+    border-bottom: 1px solid #e4e3e3;
+    font-size: 18px;
+}
+.mainright .mainbodyright1 .recommend .list{
+    width:340px;
+    height:180px;
+    overflow: hidden;
+    position: relative;
+}
+.mainright .mainbodyright1 .recommend h2{
+    /*width: 340px;*/
+    color: #ffffff;
+    position: absolute;
+    left: 50px;
+    top: 70px;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.5;
+    height: 54px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:2;
+    overflow: hidden;
+}
+.mainright .mainbodyright1 .recommend img{
+    height: 150px;
+    width: 340px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3px;
+}
+.mainbodyright1 .list a{
+    overflow: hidden;
+    font-size: 18px;
+}
+.mainbodyright1 .list a:hover img{
+    transform:scale(1.2,1.2) ;
+}
+.mainbodyright1 .list a img{
+    transition: transform .2s  ease-in;;
+}
+.mainright .mainbodyright1 .para{
+    height: 280px;
+}
+.mainright .mainbodyright1 .recommend li{
+    height:30px;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mainright .mainbodyright1 .recommend li a{
+    color: #333333;
+    font-size: 18px;
+}
+.mainright .mainbodyright1 .recommend li::before{
+    content: '';
+    width: 16px;
+    height: 16px;
+    display:inline-block;/*before after是伪元素，不能设置宽高，要设置宽高要转换*/
+    background: #f9bf77;
+    color: white;
+    text-align: center;
+    line-height: 16px;
+}
+.mainright .mainbodyright1 .recommend li:first-child::before{
+    content: '1';
+    background: #f9bf77;
+}
+.mainright .mainbodyright1 .recommend li:nth-child(2)::before{
+    content: '2';
+    background: #f9bf77;
+}
+.mainright .mainbodyright1 .recommend li:nth-child(3)::before{
+    content: '3';
+    background: #f9bf77;
+}
+.mainright .mainbodyright1 .recommend li:nth-child(4)::before{
+    content: '4';
+    background: #aaafaa;
+}
+.mainright .mainbodyright1 .recommend li:nth-child(5)::before{
+    content: '5';
+    background: #aaafaa;
+}
+.mainright .mainbodyright1 .recommend li:nth-child(6)::before{
+    content: '6';
+    background: #aaafaa;
+}
+.mainright .mainbodyright1 .recommend li:nth-child(7)::before{
+    content: '7';
+    background: #aaafaa;
+}
+.mainrightclass{
+    width: 380px;
+    float: right;
+    background: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.mainrightclass .recommend{
+    width: 340px;
+    height: 520px;
+    padding: 20px;
+}
+.mainrightclass .recommend .title{
+    height:21px ;
+    width: 340px;
+    border-bottom: 1px solid #e4e3e3;
+    font-size: 18px;
+    font-weight: bold;
+}
+.mainrightclass .recommend .list{
+    width:340px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.mainrightclass .recommend .list .para li{
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    text-overflow: ellipsis;
+    line-height: 38px;
+    padding: 0 20px 0 20px;
+}
+/*.update li{*/
+/*    height:50px ;*/
+/*    margin-bottom: 10px;*/
+/*    background: #f6f6f6;*/
+/*    border-radius: 5px;*/
+/*    padding: 0 20px 0 34px;*/
+/*    position: relative;*/
+/*    white-space: nowrap;*/
+/*    overflow: hidden;*/
+/*    text-overflow: ellipsis;*/
+/*    line-height: 38px;*/
+/*}*/
+.mainrightclass .recommend .list .para li::before {
+    content: '';
+    width: 4px;
+    height: 4px;
+    display: inline-block;
+    background: #333333;
+    border-radius: 50%;
+    position: absolute;
+    left: 8px;
+    top: 18px;
+}
+.mainrightclass .recommend .list .para a{
+    display: inline-block;
+    color: #333333;
+    height: 40px;
+    font-size: 18px;
+}
+.mainrightimg{
+    width: 340px;
+    height: 180px;
+    float: right;
+    background: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 20px;
+}
+.mainrightimg ul{
+    border-radius: 3px;
+    display: inline-block;
+}
+.mainrightimg ul a{
+    border-radius: 3px;
+    display: inline-block;
+    overflow: hidden;
+}
+.mainrightimg ul a img{
+    border-radius: 3px;
+    display: inline-block;
+    width: 340px;
+    height: 180px;
+}
+.mainrightimg ul a:hover img{
+    transform: scale(1.2,1.2);
+}
+.mainrightimg ul a img{
+    transition: transfrom .2s ease-in;
+}
+.mainzhandian{
+    width: 380px;
+    float: right;
+    background: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.mainzhandian .recommend {
+    width: 340px;
+    height: 460px;
+    padding: 20px;
+}
+.mainzhandain .recommend .title{
+    font-size: 20px;
+    font-weight: bold;
+}
+.mainzhandian .recommend .para{
+    font-size: 18px;
+}
+.mainzhandian .recommend .para a{
+   color: #009966;
+}
+.mainzhandian .recommend .image{
+    width: 194px;
+    height: 194px;
+    margin: 10px auto;
+    /*text-align: center;*/
+}
+.mainzhandian .recommend li{
+    margin-top: 15px;
+}
+.bottom{
+    width: 100%;
+    height: 190px;
+    background: black;
+    border-top: #00C1DE 10px solid;
+}
+.bottom_box{
+    width: 1400px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.bottom_box img{
+    width: 100px;
+    height: 100px;
+}
+.bottom_box .info h6{
+    font-size:18px ;
+    color: #00c1de;
+}
+.bottom_box .info p{
+    font-size: 16px;
+    color: #73777a;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

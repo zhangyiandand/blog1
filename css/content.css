@@ -1,0 +1,499 @@
+/*去属性本身的边框和样式*/
+body, h1,h2,h3,h4,h5,h6,input,ul,ol,li,textarea,p,form,select{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/*文字回退 去a标签默认属性*/
+a{
+    color: #ffffff;  /*文字颜色*/
+    text-decoration: none;   /*下划线*/
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+/*设置文本字体大小和样式*/
+body{
+    background-color: #f5faff;
+    font-family: 宋体,sans-serif;    /*sans-serif同类型文字样式*/
+    font-size: 18px;
+}
+.header{
+    width: 100%;
+    height: 50px;
+    background: black;
+}
+.header_box{
+    width: 1400px;
+    height: 100%;
+    margin: auto;
+    line-height:50px ;
+}
+/*h1,nav,search 浮动*/
+h1{
+    height: 100%;    /*不设置宽属性，大小就与内容有关*/
+    float:left;
+    margin-right: 100px;
+    font-size: 28px;
+}
+.nav{
+    height: 100% ;  /*不设置宽属性，大小就与内容有关*/
+    float:left;
+}
+.nav li{
+    margin-right: 36px;
+    float: left;
+    font-size: 18px;
+}
+.nav li a:hover{     /*鼠标放在文字上，文字颜色改变*/
+    color:#00c1de;
+}
+.search{
+    width: 50px;
+    height: 100%;
+    background: antiquewhite;
+    float:right;
+}
+.main{
+    width: 1400px;
+    /*min-height: 500px;*/
+    margin: 0 auto 20px;
+    background: #f5faff;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.mainleft{
+    width: 1010px;
+    min-height:600px ;
+    float: left;
+    /*background: white;*/
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.mainleftcontent{
+    width: 1010px;
+    min-height:600px ;
+    float: left;
+    background: white;
+    border-radius: 5px;
+    margin-right: 10px;
+
+}
+.recommend{
+    width: 970px;
+    /*height: 658px;*/
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.title{
+    height:25px ;
+    border-bottom: 1px solid #e4e3e3;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 4px;
+}
+.title::before{
+    content: '';
+    height: 2px;
+    width: 72px;
+    background: #333333;
+    position: absolute;
+    bottom: -1px;
+}
+.title .recommendCategory{
+    float:right;
+}
+.recommendCategory > li{
+    float: left;
+    margin-right: 15px;
+    color:#666;
+    font-size: 16px;
+}
+.recommendCategory > li >a{
+    color:#666;
+    font-size: 16px;
+}
+.contenttitle{
+    font-size: 22px;
+    margin-top: 20px;
+}
+.first{
+    margin-top: 20px;
+    overflow: hidden;
+    color: #999;
+    line-height: 34px;
+}
+.first img{
+    width: 30px;
+    height: 30px;
+}
+.first span{
+    margin-left: 5px;
+}
+.contentinfo{
+    color: #888888;
+    border: 1px solid #F3F3F3;
+    padding: 10px;
+    margin: 10px auto 0;
+    line-height: 23px;
+    background: none repeat 0 0 #F6F6F6;
+}
+.contentinfo b{
+    color: #000000;
+    margin-right: 10px;
+}
+.contentword{
+    margin-top: 20px;
+    font-size: 18px;
+    color:#000000;
+}
+.contentword img{
+    display: block;
+    margin: auto;
+}
+.contentword .img1{
+    width: 600px;
+    height: 642px;
+}
+.contentword .img2{
+    width: 600px;
+    height: 403px;
+}
+.contentword .img3{
+    width: 600px;
+    height: 346px;
+}
+.mainright{
+    width: 380px;
+    min-height:600px;
+    float: left;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.mainbodyright{
+    width: 380px;
+    height: 350px;
+    float: left;
+    background: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.mainright .mainbodyright .recommend{
+    width: 340px;
+    height: 520px;
+    padding: 20px;
+}
+.mainright .mainbodyright .recommend .list{
+    width:340px;
+    height:180px;
+    position: relative;
+}
+.mainright .recommend h2{
+    width: 340px;
+    color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 50px;
+    margin-top: 80px;
+    font-size: 20px;
+}
+.mainright .mainbodyright .recommend img{
+    height: 150px;
+    width: 340px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+.mainbodyright .list a{
+    overflow: hidden;
+}
+.mainbodyright .list a:hover img{
+    transform:scale(1.2,1.2) ;
+}
+.mainbodyright .list a img{
+    transition: transform .2s  ease-in;;
+}
+.mainright .mainbodyright .para{
+    height: 280px;
+}
+.mainright .mainbodyright .recommend li{
+    height:30px;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mainright .mainbodyright .recommend li a{
+    color: #333333;
+    font-size: 18px;
+}
+.mainright .mainbodyright .recommend li::before{
+    content: '';
+    width: 16px;
+    height: 16px;
+    display:inline-block;/*before after是伪元素，不能设置宽高，要设置宽高要转换*/
+    background: #f9bf77;
+    color: white;
+    text-align: center;
+    line-height: 16px;
+}
+.mainright .mainbodyright .recommend li:first-child::before{
+    content: '1';
+    background: #f9bf77;
+}
+.mainright .mainbodyright .recommend li:nth-child(2)::before{
+    content: '2';
+    background: #f9bf77;
+}
+.mainright .mainbodyright .recommend li:nth-child(3)::before{
+    content: '3';
+    background: #f9bf77;
+}
+.right{
+    width: 380px;
+    height: 300px;
+    float: right;
+    background: white;
+    border-radius: 5px;
+}
+.right .recommend{
+    width: 340px;
+    height: 520px;
+    padding: 20px;
+}
+.right .recommend .title{
+    height:25px ;
+    width: 340px;
+    border-bottom: 1px solid #e4e3e3;
+    font-size: 20px;
+    font-weight: bold;
+}
+.right .recommend .list{
+    width:340px;
+    height:180px;
+    position: relative;
+}
+.right .recommend h2{
+    width: 340px;
+    color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 20px;
+    margin-top: 70px;
+    font-size: 20px;
+    white-space: normal;
+    /*overflow: hidden;*/
+}
+.right .recommend .image1{
+    height: 150px;
+    width: 340px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.right .para{
+    height: 280px;
+    margin-top: 10px;
+}
+.right .recommend li{
+    height:60px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.right .recommend li img{
+    height: 60px;
+    width: 100px;
+    margin-right: 10px;
+    float: left;
+    position: absolute;
+}
+.right .recommend li a{
+    width:230px ;
+    height:60px;
+    color: #333333;
+    font-size: 18px;
+    float: right;
+}
+.mainrightclass{
+    width: 380px;
+    height: 200px;
+    float: right;
+    background: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.mainrightclass .recommend{
+    width: 340px;
+    height: 520px;
+    padding: 20px;
+}
+.mainrightclass .recommend .title{
+    height:25px ;
+    width: 340px;
+    border-bottom: 1px solid #e4e3e3;
+    font-size: 20px;
+    font-weight: bold;
+}
+.mainrightclass .recommend .list{
+    width:340px;
+    height:400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.mainrightclass .recommend .list .para li{
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    text-overflow: ellipsis;
+    line-height: 38px;
+    padding: 0 20px 0 20px;
+}
+.mainrightclass .recommend .list .para li::before {
+    content: '';
+    width: 4px;
+    height: 4px;
+    display: inline-block;
+    background: #333333;
+    border-radius: 50%;
+    position: absolute;
+    left: 8px;
+    top: 18px;
+}
+.mainrightclass .recommend .list .para a{
+    display: inline-block;
+    color: #333333;
+    height: 40px;
+    font-size: 18px;
+}
+.mainrightimg{
+    width: 340px;
+    height: 160px;
+    float: right;
+    background: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 20px;
+}
+.mainrightimg ul{
+    border-radius: 3px;
+    display: inline-block;
+}
+.mainrightimg ul a{
+    border-radius: 3px;
+    display: inline-block;
+    overflow: hidden;
+}
+.mainrightimg ul a img{
+    border-radius: 3px;
+    display: inline-block;
+    width: 340px;
+    height: 160px;
+}
+.mainrightimg ul a:hover img{
+    transform: scale(1.2,1.2);
+}
+.mainrightimg ul a img{
+    transition: transfrom .2s ease-in;
+}
+.righttag{
+    width: 380px;
+    height: 200px;
+    float: right;
+    background: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+{
+    height:21px ;
+    width: 340px;
+    border-bottom: 1px solid #e4e3e3;
+    font-size: 16px;
+}
+.mainzhandian{
+    width: 380px;
+    float: right;
+    background: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.mainzhandian .recommend {
+    width: 340px;
+    height: 460px;
+    padding: 20px;
+}
+.mainzhandain .recommend .title{
+    font-size: 20px;
+    font-weight: bold;
+}
+.mainzhandian .recommend .para{
+    font-size: 18px;
+}
+.mainzhandian .recommend .para a{
+    color: #009966;
+}
+.mainzhandian .recommend .image{
+    width: 194px;
+    height: 194px;
+    margin: 10px auto;
+}
+.mainzhandian .recommend li{
+    margin-top: 15px;
+}
+.title{
+    height:25px ;
+    border-bottom: 1px solid #e4e3e3;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+}
+.title::before{
+    content: '';
+    height: 2px;
+    width: 78px;
+    background: #333333;
+    position: absolute;
+    bottom: -1px;
+}
+.bottom{
+    width: 100%;
+    height: 190px;
+    background: black;
+    border-top: #00C1DE 10px solid;
+}
+.bottom_box{
+    width: 1400px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.bottom_box img{
+    width: 100px;
+    height: 100px;
+}
+.bottom_box .info h6{
+    font-size:18px ;
+    color: #00c1de;
+}
+.bottom_box .info p{
+    font-size: 16px;
+    color: #73777a;
+    margin-top: 10px;
+}
