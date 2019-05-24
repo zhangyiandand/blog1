@@ -52,7 +52,6 @@ h1{
 .search{
     width: 50px;
     height: 100%;
-    background: antiquewhite;
     float:right;
 }
 .main{
@@ -151,12 +150,13 @@ h1{
     height: 50px;
     line-height: 50px;
 }
-.recommend1body .para p{
-    width: 670px;
-}
-.para > img{
+.para .introduce .image{
     width: 34px;
     height: 34px;
+    margin-left: 10px;
+}
+.recommend1body .para p{
+    width: 670px;
 }
 .readmore{
     width: 80px;
@@ -391,7 +391,7 @@ h1{
 }
 .mainrightclass .recommend .list{
     width:340px;
-    height:400px;
+    /*height:400px;*/
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -401,7 +401,6 @@ h1{
     margin-bottom: 10px;
     position: relative;
     text-overflow: ellipsis;
-    line-height: 38px;
     padding: 0 20px 0 20px;
 }
 .mainrightclass .recommend .list .para li::before {

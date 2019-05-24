@@ -52,8 +52,12 @@ h1{
 .search{
     width: 50px;
     height: 100%;
-    background: antiquewhite;
     float:right;
+}
+.search a{
+    width: 50px;
+    height: 100%;
+    float: right;
 }
 /*header*/
 .banner{
@@ -95,7 +99,7 @@ h1{
 .leftBtn , .rightBtn{
     width: 40px;
     height: 32px;
-    background: #009966;
+    /*background: #009966;*/
     position: absolute;/*定位：用于堆叠*/
     /*第一种居中的方法*/
     top: 50%;
@@ -326,7 +330,7 @@ h1{
     transform: scale(1.2,1.2);
 }
 .tabImage li a img{
-    transition: transform .2s ease-in;;
+    transition: transform .2s ease-in;
 }
 .tabList{
     width: 550px;
@@ -349,7 +353,7 @@ h1{
 }
 
 .tabList >li >h1 a{
-    font-size: 16px;
+    font-size: 18px;
     color: #333333;
     /*A标签题目原来的颜色*/
 }
@@ -376,7 +380,7 @@ h1{
 /*p文本鼠标放上去就显示了*/
 .tabList >li >h1 span{
     width: 24px;
-    height: 20px;
+    height: 24px;
     display: inline-block;
     text-align: center;
     line-height: 20px;
@@ -633,9 +637,10 @@ h1{
 .recommend1body .para p{
     width: 670px;
 }
-.para > img{
+.para .introduce .image{
     width: 34px;
     height: 34px;
+    margin-left: 10px;
 }
 .readmore{
     width: 80px;
@@ -1019,8 +1024,8 @@ h1{
     display: flex;
     justify-content:space-around;
     align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
+padding: 20px;
+box-sizing: border-box;
 }
 .bottom_box img{
     width: 100px;
