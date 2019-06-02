@@ -5,13 +5,15 @@
     <title>个人博客</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="//at.alicdn.com/t/font_1194601_s6oqsylrnmc.css">
+    <script src="./js/animate.js"></script>
 </head>
+<script src="./js/index2.js"></script>
 <body>
 <!--内宽-->
 <div class="header">  <!--顶部-->
     <div class="header_box">  <!--顶部内宽居中-->
 <!--        浮动：使块元素无间隙排列-->
-        <h1><a href="" >某某的博客</a></h1> <!--顶部左侧-->
+        <h1><a href="">某某的博客</a></h1> <!--顶部左侧-->
         <ul class="nav"><!--顶部中间-->
             <li><a href=""style="color: #00c1de">网站首页</a></li> <!--文字颜色固定-->
             <li><a href="personal.html">个人博客日记</a></li> <!--鼠标放在文字上，文字颜色改变-->
@@ -29,8 +31,8 @@
 </div>
 <!--header-->
 <div class="banner">        <!--内容一-->
-    <div class="banner_left">
-        <ul class="img">
+    <div class="bannerleft">
+        <ul class="bannerimg">
             <li>
                 <a href=""><img src="https://www.yangqq.com/skin/jxhx/images/1.jpg" alt=""></a>
             </li>
@@ -44,10 +46,10 @@
                 <a href=""><img src="https://www.yangqq.com/skin/jxhx/images/4.jpg" alt=""></a>
             </li>
         </ul>
-        <div class="leftBtn"><a href="" class="iconfont icon-fanhui"></a></div>
-        <div class="rightBtn"><a href="" class="iconfont icon-youjiantou"></a></div>
-        <ul class="btnlist">
-            <li></li>
+        <div class="leftBtn" style="z-index: 999"><a class="iconfont icon-fanhui" ></a></div>
+        <div class="rightBtn" style="z-index: 999"><a class="iconfont icon-youjiantou"></a></div>
+         <ul class="btnlist" style="z-index: 999">
+            <li id="home"></li>
             <li></li>
             <li></li>
             <li></li>
@@ -87,12 +89,12 @@
 <div class="main">        <!--主体部分-->
     <div class="mainleft">
         <div class="diary_left">
-            <ul class="diary_list">
-                <li><a href="">个人博客日记</a></li>
-                <li><a href="">CSS3|Html5</a></li>
-                <li><a href="">网站建设</a></li>
-                <li><a href="">推荐工具</a></li>
-                <li><a href="">设计心得</a></li>
+            <ul class="diarylist">
+                <li><a >个人博客日记</a></li>
+                <li><a>CSS3|Html5</a></li>
+                <li><a >网站建设</a></li>
+                <li><a>推荐工具</a></li>
+                <li><a>设计心得</a></li>
             </ul>
             <div class="diaryTab">
                 <ul class="tabImage">
@@ -110,56 +112,36 @@
                     </li>
                 </ul>
                 <ul class="tabList">
+                    <!--                标题栏下面 图片右面的文章-->
                     <li class="hot">
-                        <h1>
-                            <a href="">
-                                <span>1</span>安静地做一个爱设计的女子
-                            </a>
-                            <p>自从入了这行，很多人跟我说可以做网络教程，我也有考虑，但最终没有实现 ，
-                                因为我觉得在这个教程泛滥的时代，直接做一套免费的原创个人博客
-                                模板更为实在。每当看到自己喜欢的配色图片</p>
-                        </h1>
-                    </li>
-                    <li>
-                        <h1>
-                            <a href="">
-                                <span>2</span>电话以外的宁静
-                            </a>
-                            <p>自从入了这行，很多人跟我说可以做网络教程，我也有考虑，但最终没有实现 ，
-                                因为我觉得在这个教程泛滥的时代，直接做一套免费的原创个人博客
-                                模板更为实在。每当看到自己喜欢的配色图片</p>
-                        </h1>
-                    </li>
-                    <li>
-                        <h1>
-                            <a href="">
-                                <span>3</span>遇见一个未知的你
-                            </a>
-                            <p>自从入了这行，很多人跟我说可以做网络教程，我也有考虑，但最终没有实现 ，
-                                因为我觉得在这个教程泛滥的时代，直接做一套免费的原创个人博客
-                                模板更为实在。每当看到自己喜欢的配色图片</p>
-                        </h1>
-                    </li>
-                    <li>
-                        <h1>
-                            <a href="">
-                                <span>4</span>个人网站做好了，百度不收录怎么办？
-                            </a>
-                            <p>自从入了这行，很多人跟我说可以做网络教程，我也有考虑，但最终没有实现 ，
-                                因为我觉得在这个教程泛滥的时代，直接做一套免费的原创个人博客
-                                模板更为实在。每当看到自己喜欢的配色图片</p>
-                        </h1>
-                    </li>
-                    <li>
-                        <h1>
-                            <a href="">
-                                <span>5</span>个人博客，属于我的小世界！
-                            </a>
-                            <p>自从入了这行，很多人跟我说可以做网络教程，我也有考虑，但最终没有实现 ，
-                                因为我觉得在这个教程泛滥的时代，直接做一套免费的原创个人博客
-                                模板更为实在。每当看到自己喜欢的配色图片</p>
-                        </h1>
-                    </li>
+                        <h2><a href="" ><span>1</span>安静地做一个爱设计的女子</a></h2>
+                        <p>
+                            &nbsp;&nbsp;自从入了这行，很多人跟我说可以做网络教程，我也有考虑，但最终没有实现，因为我觉得在这个教程泛滥的时代，直接做一套免费的原创个人博客模板更为实在。每当看到自己喜欢的配色图片
+                        </p>
+
+                    <li class="">
+                        <h2><a href="" ><span>2</span>电话以外的宁静</a></h2>
+                        <p>
+                            &nbsp;&nbsp;电话很久没有响过了，我的QQ也很久没有在线了，消失了很多天，刚刚结识的朋友因为我身上又起了红疹，每天都发来消息询问我的情况，我做到了这么多天来的沉默，我相信，没有网络，我还是可以继续我自己的生活
+                        </p>
+
+                    <li class="">
+                        <h2><a href="" ><span>3</span>遇见一个未知的你</a></h2>
+                        <p>
+                            &nbsp;&nbsp;听着那熟悉的歌曲看着那一张张可爱的图片.-读着我们共同欣赏的诗……也许我们曾经相遇,看着你远去的背影 ,沿着你来的方向 ,回忆时间穿梭于幸福的点点滴滴....
+                        </p>
+                    <li class="">
+                        <h2><a href="" ><span>4</span>个人网站做好了，百度不收录怎么办？来，看看他们怎么做的。</a></h2>
+                        <p>
+                            &nbsp;&nbsp;不管你是学前端的还是后端的，作为一个程序员，做一个自己的博客，那是必然的。咱们的圈子就这么大，想让更多的人了解你，看看你的技术多牛逼，扔一个博客地址就行了
+                        </p>
+
+                    <li class="">
+                        <h2><a href="" ><span>5</span>个人博客，属于我的小世界！</a></h2>
+                        <p>
+                            &nbsp;&nbsp;个人博客，用来做什么？我刚开始就把它当做一个我吐槽心情的地方，也就相当于一个网络记事本，写上一些关于自己生活工作中的小情小事，也会放上一些照片，音乐。每天工作回家后就能访问自己的网站，一边听着音乐，一边写写文章
+                        </p>
+
                 </ul>
             </div>
         </div>
@@ -286,7 +268,7 @@
                         <div class="body">
                             <div class="image">
                                 <a href="">
-                                    <img src="http://www.yangqq.com/d/file/news/life/2018-06-29/75842f4d1e18d692a66c38eb172a40ab.jpg" alt="">
+                                    <img  aa="http://www.yangqq.com/d/file/news/life/2018-06-29/75842f4d1e18d692a66c38eb172a40ab.jpg" alt="" class="lazyload">
                                 </a>
                             </div>
                             <div class="para">
@@ -313,7 +295,7 @@
                         <div class="body">
                             <div class="image">
                                 <a href="">
-                                    <img src="http://www.yangqq.com/d/file/blogs/2018-06-11/372b79556c82ac59a8c46eda53f177c4.jpg" alt="">
+                                    <img  aa="http://www.yangqq.com/d/file/blogs/2018-06-11/372b79556c82ac59a8c46eda53f177c4.jpg" alt="" class="lazyload">
                                 </a>
                             </div>
                             <div class="para">
@@ -340,7 +322,7 @@
                         <div class="body">
                             <div class="image">
                                 <a href="">
-                                    <img src="http://www.yangqq.com/d/file/jstt/web/2018-11-03/e3d39beb4e61d8545d6fbda2dc7a4b71.png" alt="">
+                                    <img aa="http://www.yangqq.com/d/file/jstt/web/2018-11-03/e3d39beb4e61d8545d6fbda2dc7a4b71.png" alt="" class="lazyload">
                                 </a>
                             </div>
                             <div class="para">
@@ -367,7 +349,7 @@
                         <div class="body">
                             <div class="image">
                                 <a href="">
-                                    <img src="http://www.yangqq.com/d/file/blogs/2018-06-11/372b79556c82ac59a8c46eda53f177c4.jpg" alt="">
+                                    <img   aa="http://www.yangqq.com/d/file/blogs/2018-06-11/372b79556c82ac59a8c46eda53f177c4.jpg" alt="" class="lazyload">
                                 </a>
                             </div>
                             <div class="para">
@@ -394,7 +376,7 @@
                         <div class="body">
                             <div class="image">
                                 <a href="">
-                                    <img src="http://www.yangqq.com/d/file/jstt/web/2018-11-03/e3d39beb4e61d8545d6fbda2dc7a4b71.png" alt="">
+                                    <img  aa="http://www.yangqq.com/d/file/jstt/web/2018-11-03/e3d39beb4e61d8545d6fbda2dc7a4b71.png" alt="" class="lazyload">
                                 </a>
                             </div>
                             <div class="para">

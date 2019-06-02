@@ -66,36 +66,39 @@ h1{
     margin: 10px auto;
     background: #f5faff;
 }
-.banner_left{
+.bannerleft{
     width:550px;
     height: 100%;
     float: left;
     margin-right:10px;
     background: azure;
     position: relative;
-    left: 0px;
-    top: 0px;
+    overflow: hidden;
 }
-.banner_left img{
+.bannerleft img{
     width: 100%;
     height: 100%;
 }
-
-.banner_left li{
+.bannerleft li{
     width: 100%;
     height: 100%;
-}
-.banner_left li a{
-    width: 100%;
-    height: 100%;
-    display: block;
-}
-.banner_left img{
     position: absolute;
-    left:0px ;
+    left:550px ;
     top:0px ;
 }
-
+.bannerimg >li:first-child{
+    left:0;
+}
+/*.bannerleft li a{*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    display: block;*/
+/*}*/
+/*.bannerleft img{*/
+/*    position: absolute;*/
+/*    left:550px ;*/
+/*    top:0px ;*/
+/*}*/
 .leftBtn , .rightBtn{
     width: 40px;
     height: 32px;
@@ -127,6 +130,13 @@ h1{
     background: #f6f6f6;
     float: left;
     border-radius: 50%;
+    transition: .5s;
+    position: relative;
+    left: 0px; /*第二种居中方式*/
+    right: 0px;
+}
+.btnlist >li.hot{
+    background: #4ebbfe;
 }
 .banner_mid{
     width: 450px;
@@ -261,7 +271,7 @@ h1{
     background: #ffffff;
     border-radius:5px;
 }
-.diary_list{
+.diarylist{
     width: 100%;
     height:21px;
     /*padding: 10px 0;*/
@@ -269,11 +279,11 @@ h1{
     border-bottom: 1px solid #e4e3e3;
     font-size: 16px;
 }
-.diary_list li{
+.diarylist li{
     margin-right: 30px;
     float: left;
 }
-.diary_list li a{
+.diarylist li a{
     color: black;
     font-size: 18px;
     font-weight: bold;
@@ -333,36 +343,34 @@ h1{
     transition: transform .2s ease-in;
 }
 .tabList{
-    width: 550px;
+    width: 650px;
     height: 220px;
     float: left;
     background:white;
+    margin-left: 10px;
 }
 .tabList >li {
     height: auto;
-    background: #fdfff8;
+    background: white;
+    /*line-height: 35px;*/
     padding: 0px 30px 0px 30px;
 }
 .tabList >li.hot{
     background: #dedede;
 }
-.tabList >li >h1{
+.tabList >li >h2{
     font-size: 20px;
-    height: 35px;
-    line-height: 35px;
+    height :auto;
 }
-
-.tabList >li >h1 a{
+.tabList >li >h2 a{
     font-size: 18px;
     color: #333333;
-    /*A标签题目原来的颜色*/
 }
 
-.tabList >li.hot >h1 a{
+.tabList >li.hot >h2 a{
     color: #100b10;
-    /*鼠标点上去后a标签题目变的颜色*/
 }
-.tabList >li p{
+.tabList >li > p{
     font-size: 16px;
     line-height: 1.5;
     height: 48px;
@@ -373,12 +381,10 @@ h1{
     -webkit-line-clamp:2;
     display: none;
 }
-
-.tabList >li.hot >p{
+.tabList >li.hot > p{
     display: -webkit-box;
 }
-/*p文本鼠标放上去就显示了*/
-.tabList >li >h1 span{
+.tabList >li >h2 span{
     width: 24px;
     height: 24px;
     display: inline-block;
@@ -388,12 +394,9 @@ h1{
     background: #9fa496;
     font-weight: normal;
 }
-
-/*span原来的样子*/
-.tabList >li.hot >h1 span{
+.tabList >li.hot >h2 span{
     background: #100b10;
 }
-
 .diary_right{
     width: 340px;
     height: 270px;
