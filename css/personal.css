@@ -6,7 +6,7 @@ body, h1,h2,h3,h4,h5,h6,input,ul,ol,li,textarea,p,form,select{
 }
 /*文字回退 去a标签默认属性*/
 a{
-    color: #ffffff;  /*文字颜色*/
+    color: #333333;  /*文字颜色*/
     text-decoration: none;   /*下划线*/
 }
 img{
@@ -15,14 +15,15 @@ img{
 }
 /*设置文本字体大小和样式*/
 body{
-    background-color: #f5faff;
+    background-color:  #f5f5f5;
     font-family: 宋体,sans-serif;    /*sans-serif同类型文字样式*/
     font-size: 16px;
 }
 .header{
     width: 100%;
     height: 50px;
-    background: black;
+    background: #ffffff;
+    border-bottom: 1px solid #EAEAEA;
 }
 .header_box{
     width: 1400px;
@@ -39,15 +40,15 @@ h1{
 }
 .nav{
     height: 100% ;  /*不设置宽属性，大小就与内容有关*/
-    float:left;
+    float:right;
 }
 .nav li{
     margin-right: 36px;
-    float: left;
+    float:left;
     font-size: 18px;
 }
 .nav li a:hover{     /*鼠标放在文字上，文字颜色改变*/
-    color:#00c1de;
+    color:#E2523A;
 }
 .search{
     width: 50px;
@@ -57,8 +58,7 @@ h1{
 .main{
     width: 1400px;
     /*min-height: 500px;*/
-    margin: 0 auto 20px;
-    background: #f5faff;
+    margin: 10px auto 20px;
     overflow: hidden;
 }
 .mainleft{
@@ -120,7 +120,7 @@ h1{
     width: 54px;
     height: 40px;
     margin-right: 10px;
-    color: red;
+    color: #E2523A;
     font-size: 20px;
 }
 .recommend1body .word a{
@@ -133,6 +133,10 @@ h1{
 .recommend1body .body{
     /*border-top: 10px;*/
     height: 150px;
+}
+.recommend1body .body img{
+    width: 100%;
+    height: 100%;
 }
 .recommend1body .image {
     height: 150px;
@@ -150,13 +154,13 @@ h1{
     height: 50px;
     line-height: 50px;
 }
+.recommend1body .para p{
+    width: 670px;
+}
 .para .introduce .image{
     width: 34px;
     height: 34px;
     margin-left: 10px;
-}
-.recommend1body .para p{
-    width: 670px;
 }
 .readmore{
     width: 80px;
@@ -181,7 +185,7 @@ h1{
     width: 54px;
     height: 40px;
     margin-right: 10px;
-    color: red;
+    color: #E2523A;
     font-size: 18px;
     font-weight: bold;
 }
@@ -214,7 +218,7 @@ h1{
     border-radius: 5px;
     overflow: hidden;
 }
-.mainbodyright{
+.mainbodyright1{
     width: 380px;
     height: 350px;
     float: left;
@@ -222,27 +226,39 @@ h1{
     border-radius: 5px;
     margin-bottom: 10px;
 }
-.mainright .mainbodyright .recommend{
+.mainright .mainbodyright1 .recommend{
     width: 340px;
     height: 520px;
     padding: 20px;
 }
-.mainright .mainbodyright .recommend .list{
+.mainright .mainbodyright1 .recommend .title{
+    height:21px ;
+    width: 340px;
+    border-bottom: 1px solid #e4e3e3;
+    font-size: 18px;
+}
+.mainright .mainbodyright1 .recommend .list{
     width:340px;
     height:180px;
+    overflow: hidden;
     position: relative;
 }
-.mainright .recommend h2{
-    width: 340px;
+.mainright .mainbodyright1 .recommend h2{
+    /*width: 340px;*/
     color: #ffffff;
     position: absolute;
-    left: 0;
-    top: 0;
-    margin-left: 50px;
-    margin-top: 80px;
-    font-size: 20px;
+    left: 50px;
+    top: 70px;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.5;
+    height: 54px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:2;
+    overflow: hidden;
 }
-.mainright .mainbodyright .recommend img{
+.mainright .mainbodyright1 .recommend img{
     height: 150px;
     width: 340px;
     margin-bottom: 10px;
@@ -252,53 +268,55 @@ h1{
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    overflow: hidden;
+    border-radius: 3px;
 }
-.mainbodyright .list a{
+.mainbodyright1 .list a{
     overflow: hidden;
+    font-size: 18px;
 }
-.mainbodyright .list a:hover img{
+.mainbodyright1 .list a:hover img{
     transform:scale(1.2,1.2) ;
 }
-.mainbodyright .list a img{
+.mainbodyright1 .list a img{
     transition: transform .2s  ease-in;;
 }
-.mainright .mainbodyright .para{
+.mainright .mainbodyright1 .para{
     height: 280px;
 }
-.mainright .mainbodyright .recommend li{
+.mainright .mainbodyright1 .recommend li{
     height:30px;
     margin-bottom: 20px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.mainright .mainbodyright .recommend li a{
+.mainright .mainbodyright1 .recommend li a{
     color: #333333;
     font-size: 18px;
 }
-.mainright .mainbodyright .recommend li::before{
+.mainright .mainbodyright1 .recommend li::before{
     content: '';
     width: 16px;
     height: 16px;
     display:inline-block;/*before after是伪元素，不能设置宽高，要设置宽高要转换*/
-    background: #f9bf77;
+    background: #E2523A;
     color: white;
     text-align: center;
     line-height: 16px;
 }
-.mainright .mainbodyright .recommend li:first-child::before{
+.mainright .mainbodyright1 .recommend li:first-child::before{
     content: '1';
-    background: #f9bf77;
+    background: #E2523A;
 }
-.mainright .mainbodyright .recommend li:nth-child(2)::before{
+.mainright .mainbodyright1 .recommend li:nth-child(2)::before{
     content: '2';
-    background: #f9bf77;
+    background:#E2523A;
 }
-.mainright .mainbodyright .recommend li:nth-child(3)::before{
+.mainright .mainbodyright1 .recommend li:nth-child(3)::before{
     content: '3';
-    background: #f9bf77;
+    background: #E2523A;
 }
+
 .right{
     width: 380px;
     height: 300px;
@@ -412,7 +430,7 @@ h1{
     border-radius: 50%;
     position: absolute;
     left: 8px;
-    top: 18px;
+    top: 8px;
 }
 .mainrightclass .recommend .list .para a{
     display: inline-block;
@@ -512,8 +530,8 @@ h1{
 .bottom{
     width: 100%;
     height: 190px;
-    background: black;
-    border-top: #00C1DE 10px solid;
+    background: white;
+    border-top: 1px solid #EAEAEA;;
 }
 .bottom_box{
     width: 1400px;
@@ -531,7 +549,7 @@ h1{
 }
 .bottom_box .info h6{
     font-size:18px ;
-    color: #00c1de;
+    color: #E2523A;
 }
 .bottom_box .info p{
     font-size: 16px;

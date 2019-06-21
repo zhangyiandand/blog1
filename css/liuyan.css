@@ -1,0 +1,210 @@
+/*去属性本身的边框和样式*/
+body, h1,h2,h3,h4,h5,h6,input,ul,ol,li,textarea,p,form,select{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/*文字回退 去a标签默认属性*/
+a{
+    color: #333333;  /*文字颜色*/
+    text-decoration: none;   /*下划线*/
+}
+img{
+    width: 100%;
+    /*height: 100%;*/
+}
+/*设置文本字体大小和样式*/
+body{
+    background-color: #f5f5f5;
+    font-family: 宋体,sans-serif;    /*sans-serif同类型文字样式*/
+    font-size: 16px;
+}
+.header{
+    width: 100%;
+    height: 50px;
+    background: #ffffff;
+    border-bottom: 1px solid #EAEAEA;
+}
+.header_box{
+    width: 1400px;
+    height: 100%;
+    margin: auto;
+    line-height:50px ;
+}
+/*h1,nav,search 浮动*/
+h1{
+    height: 100%;    /*不设置宽属性，大小就与内容有关*/
+    float:left;
+    margin-right: 100px;
+    font-size: 28px;
+}
+.nav{
+    height: 100% ;  /*不设置宽属性，大小就与内容有关*/
+    float:right;
+}
+.nav li{
+    margin-right: 36px;
+    float:left;
+    font-size: 18px;
+}
+.nav li a:hover{     /*鼠标放在文字上，文字颜色改变*/
+    color:#E2523A;
+}
+.main{
+    width: 1400px;
+    /*min-height: 500px;*/
+    margin: 10px auto 20px;
+    overflow: hidden;
+    background: white;
+    padding: 20px;
+}
+.main > h2{
+    font-size: 20px;
+}
+/*.main > div{*/
+/*    font-size:18px;*/
+/*    margin-bottom: 5px;*/
+/*    line-height: 30px;*/
+/*}*/
+.main > form{
+    margin-top: 10px;
+    font-size: 18px;
+}
+.main > form > .avatar{
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+.main > form > .avatar > img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    opacity: 0.5;
+}
+.main > form > .avatar > .avatarHot{
+    opacity: 1;
+}
+.main .content{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.main .content span {
+    margin: 10px 0;
+    display: inline-block;
+}
+.main .content > textarea{
+    width: 100%;
+    min-height: 300px;
+    resize:none;
+    box-sizing: border-box;
+}
+.main .content > input{
+    margin: 10px 0 0 10px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    padding: 5px 15px;
+    float: right;
+    color: #ffffff;
+    background: #000000;
+}
+.main .comment{
+    width:100%;
+    padding: 20px 10px;
+    overflow: hidden;
+    border-bottom: 1px solid #e9eaed;
+    box-sizing: border-box;
+}
+.comment > .comment1{
+    width: 50px;
+    height: 74px;
+    float: left;
+    margin-right: 10px;
+}
+.comment > .comment1 > img{
+    border-radius: 50%;
+}
+.main .comment .comment2{
+    width: 1280px;
+    float: left;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.main .comment .comment2 time{
+    color: #e9eaed;
+    display: block;
+    float: right;
+}
+.main .comment .comment2 > p{
+    width: 1280px;
+    margin-bottom: 18px;
+}
+.main .reply{
+    width: 100%;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    border-bottom:1px dashed #e9eaed;
+    overflow: hidden;
+}
+.main .reply p{
+    width: 100%;
+    height: 20px;
+    padding: 10px 10px;
+    background: #e9eaed;
+    float: left;
+}
+.retitle{
+    height: 39px;
+    line-height: 39px;
+    font-size: 16px;
+    color: #333333;
+    border-bottom: 1px solid #e9eaed;
+    position: relative;
+}
+.retitle:hover::before{
+    width: 75px;
+    transition: width .5s linear;
+}
+.retitle:before{
+    content: '';
+    display: block;
+    width: 65px;
+    height: 2px;
+    background: #333333;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+}
+.bottom{
+    width: 100%;
+    height: 190px;
+    background: white;
+    border-top: 1px solid #EAEAEA;;
+}
+.bottom_box{
+    width: 1400px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.bottom_box img{
+    width: 100px;
+    height: 100px;
+}
+.bottom_box .info h6{
+    font-size:18px ;
+    color: #E2523A;
+}
+.bottom_box .info p{
+    font-size: 16px;
+    color: #73777a;
+    margin-top: 10px;
+}

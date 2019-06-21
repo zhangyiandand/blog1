@@ -6,23 +6,24 @@ body, h1,h2,h3,h4,h5,h6,input,ul,ol,li,textarea,p,form,select{
 }
 /*文字回退 去a标签默认属性*/
 a{
-    color: #ffffff;  /*文字颜色*/
+    color: #333333;  /*文字颜色*/
     text-decoration: none;   /*下划线*/
 }
 img{
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
 }
 /*设置文本字体大小和样式*/
 body{
-    background-color: #f5faff;
+    background-color: #f5f5f5;
     font-family: 宋体,sans-serif;    /*sans-serif同类型文字样式*/
     font-size: 16px;
 }
 .header{
     width: 100%;
     height: 50px;
-    background: black;
+    background: #ffffff;
+    border-bottom: 1px solid #EAEAEA;
 }
 .header_box{
     width: 1400px;
@@ -39,26 +40,26 @@ h1{
 }
 .nav{
     height: 100% ;  /*不设置宽属性，大小就与内容有关*/
-    float:left;
+    float:right;
 }
 .nav li{
     margin-right: 36px;
-    float: left;
+    float:left;
     font-size: 18px;
 }
 .nav li a:hover{     /*鼠标放在文字上，文字颜色改变*/
-    color:#00c1de;
+    color:#E2523A;
 }
-.search{
-    width: 50px;
-    height: 100%;
-    float:right;
-}
-.search a{
-    width: 50px;
-    height: 100%;
-    float: right;
-}
+/*.search{*/
+/*    width: 50px;*/
+/*    height: 100%;*/
+/*    float:right;*/
+/*}*/
+/*.search a{*/
+/*    width: 50px;*/
+/*    height: 100%;*/
+/*    float: right;*/
+/*}*/
 /*header*/
 .banner{
     width: 1400px;
@@ -71,7 +72,7 @@ h1{
     height: 100%;
     float: left;
     margin-right:10px;
-    background: azure;
+    /*background: azure;*/
     position: relative;
     overflow: hidden;
 }
@@ -102,17 +103,23 @@ h1{
 .leftBtn , .rightBtn{
     width: 40px;
     height: 32px;
-    /*background: #009966;*/
     position: absolute;/*定位：用于堆叠*/
     /*第一种居中的方法*/
     top: 50%;
     margin-top: -16px;
 }
-.leftBtn{
+.leftBtn {
     left: 20px;
+
 }
-.rightBtn{
+.rightBtn {
     right: 20px;
+}
+.leftBtn a{
+    color: white;
+}
+.rightBtn a{
+    color: white;
 }
 .btnlist{
     width: 96px;
@@ -136,19 +143,19 @@ h1{
     right: 0px;
 }
 .btnlist >li.hot{
-    background: #4ebbfe;
+    background:#E2523A;
 }
 .banner_mid{
     width: 450px;
     height: 100%;
     float: left;
-    background:#f5faff;
+    /*background:#f5faff;*/
 }
 .banner_mid li{
     width: 450px;
     height: 135px;
     margin-bottom: 10px;
-    background: azure;
+    /*background: azure;*/
 }
 .banner_mid li a{
     position: relative;
@@ -292,7 +299,7 @@ h1{
     width:100% ;
     height: 220px;
     margin-top: 10px;
-    margin-bottom: 18px;
+    /*margin-bottom: 18px;*/
     background: white;
 }
 .tabImage{
@@ -306,7 +313,7 @@ h1{
     width: 300px;
     height: 105px;
     margin-bottom: 10px;
-    background: azure;
+    /*background: azure;*/
 }
 .tabImage li a{
     position: relative;
@@ -326,7 +333,7 @@ h1{
     -webkit-line-clamp: 2;
     overflow: hidden;
     text-align: center;/*文本居中*/
-    color: white;
+    color: #ffffff;
     position: absolute;
     top:50%;
     margin-top: -24px;
@@ -354,6 +361,7 @@ h1{
     background: white;
     /*line-height: 35px;*/
     padding: 0px 30px 0px 30px;
+    margin-bottom: 10px;
 }
 .tabList >li.hot{
     background: #dedede;
@@ -438,6 +446,7 @@ h1{
     text-overflow: ellipsis;
     line-height: 50px;
     font-size: 18px;
+    /*color:#FF5E52;*/
 }
 .update li::before{
     content: '';
@@ -455,7 +464,7 @@ h1{
     width: 1400px;
     /*main-height: 500px;*/
     margin: 0 auto 20px;
-    background: #f5faff;
+    /*background: #f5faff;*/
 }
 .mainleft{
     width: 1010px;
@@ -535,6 +544,10 @@ h1{
     box-shadow:1px 1px 10px 3px rgb(0,0,0);
     z-index: 999;
 }
+.recommendlist li img{
+    width: 100%;
+    height: 100%;
+}
 .recommendThumb{
     display: block;
     height: 100px;
@@ -607,7 +620,7 @@ h1{
     width: 54px;
     height: 40px;
     margin-right: 10px;
-    color: red;
+    color: #E2523A;
     font-size: 20px;
 }
 .recommend1body .word a{
@@ -620,6 +633,10 @@ h1{
 .recommend1body .body{
     /*border-top: 10px;*/
     height: 150px;
+}
+.recommend1body .body img{
+    width: 100%;
+    height: 100%;
 }
 .recommend1body .image {
     height: 150px;
@@ -668,7 +685,7 @@ h1{
     width: 54px;
     height: 40px;
     margin-right: 10px;
-    color: red;
+    color: #E2523A;
     font-size: 18px;
     font-weight: bold;
 }
@@ -858,22 +875,22 @@ h1{
     width: 16px;
     height: 16px;
     display:inline-block;/*before after是伪元素，不能设置宽高，要设置宽高要转换*/
-    background: #f9bf77;
+    background: #E2523A;
     color: white;
     text-align: center;
     line-height: 16px;
 }
 .mainright .mainbodyright1 .recommend li:first-child::before{
     content: '1';
-    background: #f9bf77;
+    background: #E2523A;
 }
 .mainright .mainbodyright1 .recommend li:nth-child(2)::before{
     content: '2';
-    background: #f9bf77;
+    background:#E2523A;
 }
 .mainright .mainbodyright1 .recommend li:nth-child(3)::before{
     content: '3';
-    background: #f9bf77;
+    background: #E2523A;
 }
 .mainright .mainbodyright1 .recommend li:nth-child(4)::before{
     content: '4';
@@ -923,6 +940,7 @@ h1{
     text-overflow: ellipsis;
     line-height: 38px;
     padding: 0 20px 0 20px;
+    /*border-bottom: 1px solid #e4e3e3;*/
 }
 /*.update li{*/
 /*    height:50px ;*/
@@ -1017,8 +1035,8 @@ h1{
 .bottom{
     width: 100%;
     height: 190px;
-    background: black;
-    border-top: #00C1DE 10px solid;
+    background: white;
+    border-top: 1px solid #EAEAEA;;
 }
 .bottom_box{
     width: 1400px;
@@ -1036,7 +1054,7 @@ box-sizing: border-box;
 }
 .bottom_box .info h6{
     font-size:18px ;
-    color: #00c1de;
+    color: #E2523A;
 }
 .bottom_box .info p{
     font-size: 16px;
